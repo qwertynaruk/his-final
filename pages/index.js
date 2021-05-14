@@ -39,7 +39,7 @@ class ThLocalizedUtils extends DateFnsUtils {
   }
 }
 
-function Home({ data }) {
+function Home() {
   const [preload, setPreload] = useState(true)
   const [selectedDate, setSelectedDate] = useState(Date.now())
   const [selectedTime, handleTimeChange] = useState(Date.now())
@@ -178,15 +178,5 @@ function Home({ data }) {
     </div>
   )
 }
-
-
-// export async function getStaticProps() {
-//   // Fetch data from external API
-//   const res = await fetch('/api/vendor')
-//   const data = await res.json()
-
-//   // Pass data to the page via props
-//   return { props: { data } }
-// }
 
 export default Home
