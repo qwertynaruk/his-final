@@ -49,7 +49,7 @@ function Home({ data }) {
   const [autoSearch, setAutoSearch] = useState('')
 
   useEffect(async() => {
-    await fetch('https://foods.omplatform.com/api/om_food/v3/vendor/ordering').then(response => response.json())
+    await fetch('/api/vendor').then(response => response.json())
     .then(data => {
       setResData(data.data)
       setRawData(data.data)
